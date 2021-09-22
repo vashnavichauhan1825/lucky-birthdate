@@ -17,11 +17,11 @@ function compareValues(sum ,luckyNumber)
 function checkBirthDateIsLucky(){
   const dob = dateOfBirth.value;
   const sum = calculateSum(dob);
-  if(sum&&dob)
- compareValues(sum,luckyNumber.value)
- else
- outputBox.innerText="please enter both fields";
- 
+  if(Number.isInteger(sum)&&Number.isInteger(dob)){
+ compareValues(sum,luckyNumber.value)}
+ else{
+ outputBox.innerText="please enter both fields properly !";
+ }
 }
 
 btnPrivacy.addEventListener('click', () => {
