@@ -28,7 +28,6 @@ btnPrivacy.addEventListener('click', () => {
     const footer = document.querySelector('#footer');
     content.style.filter = 'none';
     footer.style.display = 'block'
-    btnPrivacy.parentElement.style.display = 'none';
 });
 
 function calculateSum(dob){
